@@ -45,20 +45,22 @@ Deletar endereço: Na página de listagem de endereços, você pode clicar no ch
 
 # Endpoints da API
 
-GET /addresses: Retorna todos os endereços cadastrados.
-GET /addresses/:id: Retorna um endereço específico pelo ID.
-POST /addresses: Cadastra um novo endereço.
-PUT /addresses/:id: Atualiza um endereço existente pelo ID.
-DELETE /addresses/:id: Deleta um endereço pelo ID.
+### GET /addresses: Retorna todos os endereços cadastrados.
+### GET /addresses/:id: Retorna um endereço específico pelo ID.
+### POST /addresses: Cadastra um novo endereço.
+### PUT /addresses/:id: Atualiza um endereço existente pelo ID.
+### DELETE /addresses/:id: Deleta um endereço pelo ID.
 
 # Estrutura do Banco de Dados
 ## Tabela addresses
 
-Coluna	Tipo	Descrição
-id	SERIAL	Identificador único
-userName	VARCHAR(255)	Nome do usuário
-street	VARCHAR(255)	Nome da rua
-city	VARCHAR(255)	Nome da cidade
-state	VARCHAR(255)	Nome do estado
-country	VARCHAR(255)	Nome do país
-nickname	VARCHAR(255)	Apelido para o endereço (opcional)
+| Coluna    | Tipo          | Descrição                                    |
+|-----------|---------------|----------------------------------------------|
+| id        | SERIAL        | Identificador único                          |
+| userName  | VARCHAR(255)  | Nome do usuário                              |
+| street    | VARCHAR(255)  | Nome da rua                                  |
+| city      | VARCHAR(255)  | Nome da cidade                               |
+| state     | VARCHAR(255)  | Nome do estado                               |
+| country   | VARCHAR(255)  | Nome do país                                 |
+| nickname  | VARCHAR(255)  | Apelido para o endereço (opcional)          |
+
