@@ -6,6 +6,7 @@ const dotenv = require('dotenv');
 const sequelize = require('./config/dbConfig');
 const User = require('./models/userModel');
 const Address = require('./models/addressModel');
+const searchRoutes = require('./routes/searchRoutes');
 
 dotenv.config();
 

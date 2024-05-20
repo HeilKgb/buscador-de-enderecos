@@ -1,0 +1,31 @@
+/* src/components/AddressList.css */
+
+.address-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.address-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.address-list th,
+.address-list td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.address-list th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.address-list tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.address-list input[type="checkbox"] {
+  cursor: pointer;
+}

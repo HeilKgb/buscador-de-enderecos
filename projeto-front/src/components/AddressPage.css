@@ -1,0 +1,52 @@
+.address-page-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.address-page-container h2 {
+  text-align: center;
+}
+
+.address-page-container form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.address-page-container input[type="text"] {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.address-page-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.address-page-container button:hover {
+  background-color: #0056b3;
+}
+
+.address-details,
+.address-not-found {
+  margin-top: 20px;
+}
+
+.address-not-found button {
+  padding: 8px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.address-not-found button:hover {
+  background-color: #218838;
+}

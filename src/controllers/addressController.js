@@ -1,4 +1,5 @@
 const addressService = require('../services/addressService');
+const { validarCEP } = require('../utils/cepValidator');
 
 exports.createAddress = async (req, res) => {
   try {
@@ -11,6 +12,18 @@ exports.createAddress = async (req, res) => {
     res.status(201).json(newAddress);
   } catch (error) {
     res.status(400).json({ error: error.message });
+  }
+};
+
+exports.saveAddressFromCEP = async (req, res) => {
+  try {
+    const { cep, userId } = req.body;
+    const addressData = await addressService.getAddressFromAPI(cep);
+    addressData.userId = userId;
+    const newAddress = await addressService.createAddress(addressData);
+    res.status(201).json(newAddress);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
 };
 
